@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
+
+<h2>HTML Table</h2>
+
+<table>
+    <tr th:each="stud : ${studentsList}">
+        <th th:text="${stud.firstName}"></th>
+        <th th:text="${stud.lastName}"></th>
+        <th th:text="${stud.collegeName}"></th>
+    </tr>
+</table>
 
 </body>
 </html>

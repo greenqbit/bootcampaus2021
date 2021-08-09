@@ -4,8 +4,8 @@ import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
 public class Student { //POJO class: Plain OLD Java Object
     private Long id;
     private String firstName;
