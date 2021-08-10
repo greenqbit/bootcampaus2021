@@ -2,11 +2,13 @@ import React from 'react';
 //React v17 -> no need to import
 import './App.css';
 import logo from './logo.svg'
+import GNavBar from "./GNavBar";
+import LoginPage from "./components/LoginPage";
 
 function App2() {
     return (
         <div className="App">
-            <header className="App-header">
+            {/*<header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <p>
                     Our first Bootcamp React App :)
@@ -18,7 +20,9 @@ function App2() {
                 >
                   Learn React via GreenQbit
                 </a>
-            </header>
+            </header>*/}
+            <GNavBar />
+            <LoginPage />
         </div>
     );
 }
