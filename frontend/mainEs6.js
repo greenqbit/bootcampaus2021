@@ -23,6 +23,27 @@ console.log("Result ", result)
 export const addLamdaWay = (a , b) => a + b
 console.log("Result ", addLamdaWay(10, 20))
 
+
+///ES6 features
+//spread operator =>
+// named property
+const student = { //student json object
+    firstName: 'Ram',
+    college: 'NSW ',
+    country: 'Australia'
+}
+//1 way
+console.log(student.firstName, student.college, student.country)
+//2 way
+const { firstName, college, country } = student
+console.log(firstName, college, country)
+
+//Copy by reference or copy by value.
+const studCopy = student //copy by reference
+const studValueCopy = {...student} //copy value(no reference) => Spread operator (...)
+console.log(studCopy)
+
+
 export class Bank {
     constructor(name) {
        this.name = name;
@@ -30,8 +51,8 @@ export class Bank {
 }
 
 export class Car extends Bank {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 }
 

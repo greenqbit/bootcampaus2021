@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, NavDropdown} from "react-bootstrap";
+import {Badge, Nav, NavDropdown} from "react-bootstrap";
 
 const GNavBar = () => {
     const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
@@ -26,7 +26,8 @@ const GNavBar = () => {
                 <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
                 <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+                <NavDropdown.Item eventKey="4.4">Course
+                </NavDropdown.Item>
             </NavDropdown>
         </Nav>
     );
