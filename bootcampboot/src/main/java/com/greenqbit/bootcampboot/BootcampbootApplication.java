@@ -1,6 +1,5 @@
 package com.greenqbit.bootcampboot;
 
-import com.greenqbit.bootcampboot.model.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
