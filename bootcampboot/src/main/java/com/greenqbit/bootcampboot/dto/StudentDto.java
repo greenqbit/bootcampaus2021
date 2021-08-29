@@ -1,4 +1,4 @@
-package com.greenqbit.bootcampboot.model;
+package com.greenqbit.bootcampboot.dto;
 
 import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -6,7 +6,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Student { //POJO class: Plain OLD Java Object
+public class StudentDto { //POJO class: Plain OLD Java Object, Data Transfter Object(DTO)
     private Long id;
     private String firstName;
     private String lastName;

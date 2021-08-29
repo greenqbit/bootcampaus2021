@@ -1,10 +1,12 @@
 package com.greenqbit.bootcampboot.controller;
 
+import com.greenqbit.bootcampboot.repository.StudentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import com.greenqbit.bootcampboot.model.Student;
+import com.greenqbit.bootcampboot.dto.StudentDto;
 
 import java.util.*;
 
@@ -13,16 +15,21 @@ import java.util.*;
 @RequestMapping(value = "/stud") //GET,POST,DELETE
 public class StudentController {
 
+    @Autowired //Wiring
+    private StudentRepository studentRepository; //Dependecny(Bean or Object) Injection ( Inversion of Control), Dont call me I will call you :)
+
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView studGet() {
+
+        //NO 1 StudentRepository ob  = new StudentRepository();
 
         //Task:
         // 1. Fetch all the student from the database
         // return to frontend ( frontend show that data).
-        Student studRam = new Student(1L, "Erin", "Kar", "NCIT", 900d, null);
-        Student studSam = new Student(2L, "Sam", "K", "Rand", 2923d, null);
-        Student studSum = new Student(3L, "Suman", "Chaud", "Rand", 2923d, null);
-        List<Student> studentsList = new ArrayList<>(); //OOP => parent(List) => child ArrayList
+        StudentDto studRam = new StudentDto(1L, "Erin", "Kar", "NCIT", 900d, null);
+        StudentDto studSam = new StudentDto(2L, "Sam", "K", "Rand", 2923d, null);
+        StudentDto studSum = new StudentDto(3L, "Suman", "Chaud", "Rand", 2923d, null);
+        List<StudentDto> studentsList = new ArrayList<>(); //OOP => parent(List) => child ArrayList
         studentsList.add(studRam); //0 index
         studentsList.add(studSam); //1 index
         studentsList.add(studSum); //2 index
