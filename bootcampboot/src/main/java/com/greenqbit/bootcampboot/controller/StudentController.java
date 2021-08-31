@@ -15,8 +15,11 @@ import java.util.*;
 @RequestMapping(value = "/stud") //GET,POST,DELETE
 public class StudentController {
 
-    @Autowired //Wiring
-    private StudentRepository studentRepository; //Dependecny(Bean or Object) Injection ( Inversion of Control), Dont call me I will call you :)
+    @Autowired
+    private StudentRepository studentRepository;
+
+    //Aspect Oriented Programming
+    //    dependency(Bean or Object) Injection ( Inversion of Control), Dont call me I will call you :)
 
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView studGet() {
