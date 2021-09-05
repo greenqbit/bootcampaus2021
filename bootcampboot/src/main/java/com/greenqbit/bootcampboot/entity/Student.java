@@ -23,6 +23,9 @@ public class Student {
     @GeneratedValue
     private Long id; //number,int, bigint
 
+    @Column(name = "passport_no")
+    private String passportNo; //Sensitive (X Dont send it to frontend)
+
     @Column(name = "first_name") //varchar
     private String firstName;
 

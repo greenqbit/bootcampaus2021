@@ -5,11 +5,14 @@ import './index.css';
 import App2 from './App2';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Router} from "react-router";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/*<App />*/}
-    <App2 />
+      <Router>
+        {/*<App />*/}
+        <App2 />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
