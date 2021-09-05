@@ -3,6 +3,7 @@ package com.greenqbit.bootcampboot.dto;
 import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
+@Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

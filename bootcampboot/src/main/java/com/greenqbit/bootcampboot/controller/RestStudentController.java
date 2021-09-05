@@ -29,6 +29,10 @@ public class RestStudentController {
         return ResponseEntity.ok(studentDtoList);
     }
 
+
+
+
+
     @RequestMapping(value = "/api/stud/{id}", method = RequestMethod.GET) // => /api/stud/2
     public StudentDto getStud() {
         return null;

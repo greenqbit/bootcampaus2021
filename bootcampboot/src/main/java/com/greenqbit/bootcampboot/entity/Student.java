@@ -20,7 +20,7 @@ import javax.persistence.*;
 public class Student {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue //AUTO INCREMENT -> This is require for hibernate
     private Long id; //number,int, bigint
 
     @Column(name = "passport_no")
