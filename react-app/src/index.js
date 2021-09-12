@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-import App2 from './App2';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Router} from "react-router";
+// import CartContext from "./CartContext";
 
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
-        {/*<App />*/}
-        <App2 />
-    </Router>
+      {/*<CartContext.Provider value={[]}>*/}
+        <App />
+      {/*</CartContext.Provider>*/}
   </React.StrictMode>,
   document.getElementById('root')
 );

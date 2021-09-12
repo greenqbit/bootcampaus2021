@@ -1,3 +1,12 @@
+function chagen(jQuery) {
+    (function() {
+        const colorDiv = document.getElementById("colorDiv");
+        colorDiv.style.color = 'green';
+    })(jQuery) //IEE
+}
+
+chagen
+
 function changeColor() {
     //only two datatype in javascript
     //var , const (es6)

@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class StudentDto { //POJO class: Plain OLD Java Object, Data Transfter Object(DTO)
+public class StudentDto { //POJO class: Plain OLD Java Object, Data Transfer Object(DTO)
     private Long id;
     private String firstName;
     private String lastName;
