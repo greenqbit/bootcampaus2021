@@ -56,4 +56,21 @@ export class Car extends Bank {
     }
 }
 
+var id = 5;
+const id = 5;
+
+//JS
+// var id3 = "HELLO";
+// id3 = 4;
+// id3 = 4.5;
+
+//TypeScript
+// id: string;
+// price: number;
+// price = "HEL"
+
+//Java
+// String name;
+// double price;
+
 export default sumA
